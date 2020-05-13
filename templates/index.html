@@ -1,0 +1,627 @@
+{% load static %}
+{% static "img" as baseURL %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Musico</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static "img/favicon.png" %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/themify-icons.css" %}">
+    <link rel="stylesheet" href="{% static "css/nice-select.css" %}">
+    <link rel="stylesheet" href="{% static "css/audioplayer.css" %}">
+    <link rel="stylesheet" href="{% static "css/flaticon.css" %}">
+    <link rel="stylesheet" href="{% static "css/gijgo.css" %}">
+    <link rel="stylesheet" href="{% static "css/animate.css" %}">
+    <link rel="stylesheet" href="{% static "css/slick.css" %}">
+    <link rel="stylesheet" href="{% static "css/slicknav.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<link rel = "stylesheet" type = "text/css" href = "style1.css">-->
+</head>
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="{% static "img/logo2.png" %}" alt="" width="150" height="50">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li ><a class="active" href="{% url 'home' %}">home</a></li>
+                                            <li><a href="{% url 'about' %}">About</a></li>
+                                            <li><a href="{% url 'mix' %}">Tracks</a></li>
+                                            <li><a href="{% url 'events' %}">Event</a></i>
+                                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="social_icon text-right">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/Deejay.Wysei"> <i class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="https://twitter.com/djwysei?s=09"> <i class="fa fa-twitter"></i> </a></li>
+                                        <li><a href="https://www.instagram.com/commissioner_djwysei/"> <i class="fa fa-instagram"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    {% block content %}
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+
+
+        <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2" <!--style ="background-image:url({% static 'img/banner/banner2.png'%});"-->>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-xl-12">
+
+                        <div class="slider_text text-center ">
+                            <h3>COMMISSIONER</h3>
+                            <p>Dj WYSEI </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- slider_area_end -->
+
+    <!-- music_area  -->
+    <div class="music_area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row align-items-center">
+                                <div class="col-xl-9 col-md-9">
+                                    <div class="music_field">
+                                            <div class="thumb">
+                                                    <img src="{% static "img/music_man/bw2.jpg" %}" alt="" width="148" height="148">
+                                                </div>
+                                                <div class="audio_name">
+                                                    <div class="name">
+                                                        <h4>Commissioner dj wysie </h4>
+                                                        <p>volume 1 mix tape</p>
+                                                    </div>
+                                                        <audio preload="auto" controls autoplay>
+                                                                <source src="{% static 'welcome1.mp3' %}" type="audio/mp3">
+                                                            </audio>
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-3">
+                                    <div class="music_btn">
+                                            <a href="{% url 'contact' %}" class="boxed-btn">BOOKING</a>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- music_area end  -->
+
+    <!-- about_area  -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-md-6">
+                    <div class="about_thumb">
+                        <img class="img-fluid" src="{% static "img/about/8.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-6">
+                    <div class="about_info">
+                        <h3>DJ WYSEI</h3>
+                        <p>Iwuagwu Ebere Pat Popularly known as “Commissioner DJ Wysei” is a young Nigerian female DJ who took the entire entertainment industry by surprise when she became the Youngest Female DJ playing on Radio (Wazobia Fm 95.1 Lagos), at an age younger than 20, she has won several high profiled awards,Commissioner DJ Wysei was also profiled and interviewed by international news giant CNN, it was a huge honor to have featured in CNN Focus on AFRICA a program that is highly rated in Africa, After her *CNN* recognition, she decided to drop a 3 Hours Mix, which is her longest Dj mix by a Female Dj in Africa.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ about_area  -->
+
+    <!-- youtube_video_area  -->
+    <div class="youtube_video_area">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="single_video">
+                        <div class="thumb">
+                            <img src="{% static "img/video/15.jpeg" %}" alt="" height="300">
+                        </div>
+                        <div class="hover_elements">
+                            <div class="video">
+                                    <a class="popup-video" href="https://www.youtube.com/embed/hoNb6HuNmU">
+                                            <i class="fa fa-play"></i>
+                                        </a>
+                            </div>
+
+                            <div class="hover_inner">
+                                <span>Commissioner Dj Wysei</span>
+                                <h3><a href="#">Production Studio section</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="single_video">
+                        <div class="thumb">
+                            <img src="{% static "img/video/11.jpg" %}" alt="" height="300">
+                        </div>
+                        <div class="hover_elements">
+                            <div class="video">
+                                    <a class="popup-video" href="https://www.youtube.com/watch?v=d3WniXqu4dE&t=2s">
+                                            <i class="fa fa-play"></i>
+                                        </a>
+                            </div>
+
+                            <div class="hover_inner">
+                                <span>Commissioner Dj Wysei</span>
+                                <h3><a href="#">Club Host in Owerri</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="single_video">
+                        <div class="thumb">
+                            <img src="{% static "img/video/14.jpeg" %}" alt="" height="300">
+                        </div>
+                        <div class="hover_elements">
+                            <div class="video">
+                                    <a class="popup-video" href="https://www.youtube.com/watch?v=7rWu-yffVEY">
+                                            <i class="fa fa-play"></i>
+                                        </a>
+                            </div>
+
+                            <div class="hover_inner">
+                                <span>Commissioner Dj Wysei</span>
+                                <h3><a href="#">Somewhere in Lagos</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="single_video">
+                        <div class="thumb">
+                            <img src="{% static "img/video/pepsi.jpeg" %}" alt="" height="300">
+                        </div>
+                        <div class="hover_elements">
+                            <div class="video">
+                                    <a class="popup-video" href="https://www.youtube.com/watch?v=Hzmp3z6deF8">
+                                            <i class="fa fa-play"></i>
+                                        </a>
+                            </div>
+
+                            <div class="hover_inner">
+                                <span>Commissioner Dj Wysei</span>
+                                <h3><a href="#">club Banger</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / youtube_video_area  -->
+
+    <!-- music_area  -->
+    <div class="music_area music_gallery">
+        <div class="container">
+                <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section_title text-center mb-65">
+                                <h3><strong>Latest Tracks</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+            <div class="row align-items-center justify-content-center mb-20">
+                <div class="col-xl-10">
+                  {% for music in music %}
+                    <div class="row align-items-center">
+                                <div class="col-xl-9 col-md-9">
+                                    <div class="music_field">
+                                            <div class="thumb">
+                                                    <img src="{{ music.img.url }}" alt="" width="148" height="148">
+                                                </div>
+                                                <div class="audio_name">
+                                                    <div class="name">
+                                                        <h4>{{ music.singer_name }}</h4>
+                                                        <p>{{ music.title }}</p>
+                                                    </div>
+                                                        <audio preload="auto" controls>
+                                                                <source src="{{ music.musicfile.url }}">
+                                                            </audio>
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-3">
+                                    <div class="music_btn">
+                                            <a href="{{ music.musicfile.url }}" class="boxed-btn" download> download</a>                                    
+                                    </div>
+                                </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <!-- <div class="row align-items-center justify-content-center mb-20">
+                <div class="col-xl-10">
+                    <div class="row align-items-center">
+                                <div class="col-xl-9 col-md-9">
+                                    <div class="music_field">
+                                            <div class="thumb">
+                                                    <img src="{% static "img/music_man/9.jpg" %}" alt="" width="148" height="148">
+                                                </div>
+                                                <div class="audio_name">
+                                                    <div class="name">
+                                                        <h4>DJ Wysei</h4>
+                                                        <p>2020 Mix</p>
+                                                    </div>
+                                                        <audio preload="auto" controls>
+                                                                <source src="https://www.w3schools.com/html/horse.mp3">
+                                                            </audio>
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-3">
+                                    <div class="music_btn">
+                                            <a href="#" class="boxed-btn">Download Mix</a>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+
+            </div> -->
+            <!-- <div class="row align-items-center justify-content-center mb-20">
+                <div class="col-xl-10">
+                    <div class="row align-items-center">
+                                <div class="col-xl-9 col-md-9">
+                                    <div class="music_field">
+                                            <div class="thumb">
+                                                    <img src="{% static "img/music_man/bw2.jpg" %}" alt="" width="148" height="148">
+                                                </div>
+                                                <div class="audio_name">
+                                                    <div class="name">
+                                                        <h4>DJ Wysei</h4>
+                                                        <p>Zanku Mix 2020</p>
+                                                    </div>
+                                                        <audio preload="auto" controls>
+                                                                <source src="https://www.w3schools.com/html/horse.mp3">
+                                                            </audio>
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-3">
+                                    <div class="music_btn">
+                                            <a href="#" class="boxed-btn">Download Mix</a>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+    <!-- music_area end  -->
+
+    <!-- gallery -->
+    <div class="gallery_area"style="padding-top: 20px">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-65" >
+                        <h3><strong>Image Galleries</strong></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row grid">
+                    <div class="col-xl-5 col-lg-5 grid-item cat1 col-md-6">
+                        <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{% static "img/gallery/16.jpg" %}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                    <a  class="popup-image"  href="img/gallery/16.jpg" class="hover_inner">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 grid-item cat3 cat4 col-md-6">
+                        <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{% static "img/gallery/17.jpg" %}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{% static "img/gallery/17.jpg" %}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                        </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 grid-item cat4 col-md-6">
+                        <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{% static "img/gallery/new1.jpg" %}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{% static "img/gallery/new1.jpg" %}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                        </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                        <div class="single-gallery mb-30">
+                            <div class="portfolio-img">
+                                    <img src="{% static "img/gallery/15.jpg" %}" alt="">
+                            </div>
+                            <div class="gallery_hover">
+                                    <a class="popup-image" href="{% static "img/gallery/15.jpg" %}" class="hover_inner">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                        <div class="single-gallery mb-30">
+                            <div class="portfolio-img">
+                                    <img src="{% static "img/gallery/new2.jpg" %}"  alt="">
+                            </div>
+                            <div class="gallery_hover">
+                                    <a class="popup-image" href="{% static "img/gallery/new2.jpg" %}" class="hover_inner">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--/ gallery -->
+
+    <!-- contact_rsvp -->
+    <div class="contact_rsvp">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-12">
+                  <div class="socail_links">
+                      <ul>
+                          <li style ="float:left;">
+                              <a href="https://www.instagram.com/commissioner_djwysei/">
+                                  <i class="fa fa-instagram" style = "font-size:300%;"></i>
+                              </a>
+                          </li>
+                          <li style = "float:right;">
+                              <a href="https://www.facebook.com/Deejay.Wysei">
+                                  <i class=" fa fa-facebook " style = "font-size:300%;"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+
+                    <div class="text text-center">
+
+                        <h3>For Bookings</h3>
+                        <a class="boxed-btn3" href="{% url 'contact' %}">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ contact_rsvp -->
+{% endblock %}
+    <!-- footer start -->
+    <footer class="footer">
+
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                   <!-- <div class="col-xl-6 col-md-6">
+                            <div class="footer_widget">
+                                    <h3 class="footer_title">
+                                            Services
+                                    </h3>
+                                <div class="subscribe-from">
+                                        <form action="#">
+                                                <input type="text" placeholder="Enter your mail">
+                                                <button type="submit" >Subscribe</button>
+                                            </form>
+                                </div>
+                                <p class="sub_text">Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
+                                </div>
+                    </div>-->
+
+                    <div class="col-xl-5 col-md-5 offset-xl-1">
+                        <div class="footer_widget">
+
+                                <h3 class="footer_title">
+                                        Contact
+                                </h3>
+
+
+                            <ul>
+                                <li><a href="#">commissionerdjwysei@gmail.com
+                                    </a></li>
+                                <li><a href="#">+234802019007
+                                    </a></li>
+                                <li><a href="#">no 2, Gamma road, Lagos, Nigeria</a></li>
+                            </ul>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/Deejay.Wysei">
+                                            <i class=" fa fa-facebook "></i>
+                                        </a>
+                                    </li>
+                                   <!-- <li>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>-->
+                                    <li>
+                                        <a href="https://twitter.com/djwysei?s=09">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCWIcWqJoO_nu_uXwOulhinQ">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/commissioner_djwysei/">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-7 col-md-6">
+                        <p class="copy_right">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |commissioner dj wysei design by <strong>Anup,Akeem and Sagar(Codewacky)</strong> <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="https:commissionerdjwysei.com" target="_blank"></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                    <div class="col-xl-5 col-md-6">
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="{% url 'home' %}">home</a></li>
+                                <li><a href="{% url 'about' %}">about</a></li>
+                                <li><a href="{% url 'mix' %}">tracks</a></li>
+                                <li><a href="{% url 'events' %}">event</a></li>
+                                <li><a href="{% url 'contact' %}">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Start of Tawk.to Script-->
+<div >
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e4fe0faa89cda5a188745a5/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+</div>
+<!--End of Tawk.to Script-->
+    <!--/ footer end  -->
+
+    <!-- link that opens popup -->
+
+    <!-- JS here -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
+    </script>
+    <script src="{% static "js/vendor/modernizr-3.5.0.min.js" %}"></script>
+    <script src="{% static "js/vendor/jquery-1.12.4.min.js" %}"></script>
+    <script src="{% static "js/popper.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "js/isotope.pkgd.min.js" %}"></script>
+    <script src="{% static "js/ajax-form.js" %}"></script>
+    <script src="{% static "js/waypoints.min.js" %}"></script>
+    <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+    <script src="{% static "js/imagesloaded.pkgd.min.js" %}"></script>
+    <script src="{% static "js/audioplayer.js" %}"></script>
+    <script src="{% static "js/scrollIt.js" %}"></script>
+    <script src="{% static "js/jquery.scrollUp.min.js" %}"></script>
+    <script src="{% static "js/wow.min.js" %}"></script>
+    <script src="{% static "js/nice-select.min.js" %}"></script>
+    <script src="{% static "js/jquery.slicknav.min.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/plugins.js" %}"></script>
+    <script src="{% static "js/gijgo.min.js" %}"></script>
+    <script src="{% static "js/slick.min.js" %}"></script>
+    <!--contact js-->
+    <script src="{% static "js/contact.js" %}"></script>
+    <script src="{% static "js/jquery.ajaxchimp.min.js" %}"></script>
+    <script src="{% static "js/jquery.form.js" %}"></script>
+    <script src="{% static "js/jquery.validate.min.js" %}"></script>
+    <script src="{% static "js/mail-script.js" %}"></script>
+
+    <script src="{% static "js/main.js" %}"></script>
+
+		<script>
+                $(function() {
+                    $('audio').audioPlayer({
+
+                    });
+                });
+            </script>
+</body>
+
+</html>
